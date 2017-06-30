@@ -23,6 +23,7 @@ Partial Class FormC2QB
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.C2QB = New System.Windows.Forms.Button()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.SuspendLayout()
         '
         'C2QB
@@ -34,17 +35,18 @@ Partial Class FormC2QB
         Me.C2QB.Text = "C2QB"
         Me.C2QB.UseVisualStyleBackColor = True
         '
-        'Form1
+        'FormC2QB
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(506, 459)
         Me.Controls.Add(Me.C2QB)
-        Me.Name = "Form1"
+        Me.Name = "FormC2QB"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents C2QB As Button
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
 End Class
