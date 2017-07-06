@@ -14,13 +14,13 @@ Public Class FormC2QB
         System.Threading.Thread.Sleep(1000)
 
         Dim config As New QbConfig()
-        config.ApplicationToken = ConfigurationSettings.AppSettings("applicationToken")
-        config.ConsumerKey = ConfigurationSettings.AppSettings("consumerKey")
-        config.ConsumerSecret = ConfigurationSettings.AppSettings("consumerSecret")
-        config.OauthRequestTokenEndpoint = ConfigurationSettings.AppSettings("oauthRequestTokenEndpoint")
-        config.OauthAccessTokenEndpoint = ConfigurationSettings.AppSettings("oauthAccessTokenEndpoint")
-        config.OauthBaseUrl = ConfigurationSettings.AppSettings("oauthBaseUrl")
-        config.OauthUserAuthUrl = ConfigurationSettings.AppSettings("oauthUserAuthUrl")
+        config.ApplicationToken = ConfigurationManager.AppSettings("applicationToken")
+        config.ConsumerKey = ConfigurationManager.AppSettings("consumerKey")
+        config.ConsumerSecret = ConfigurationManager.AppSettings("consumerSecret")
+        config.OauthRequestTokenEndpoint = ConfigurationManager.AppSettings("oauthRequestTokenEndpoint")
+        config.OauthAccessTokenEndpoint = ConfigurationManager.AppSettings("oauthAccessTokenEndpoint")
+        config.OauthBaseUrl = ConfigurationManager.AppSettings("oauthBaseUrl")
+        config.OauthUserAuthUrl = ConfigurationManager.AppSettings("oauthUserAuthUrl")
         config.SelectedMode = QbConfig.AppMode.Console
         Dim result As QbResponse = Nothing
         Dim connectToQuickBooks As New QbConnect()
